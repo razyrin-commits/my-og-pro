@@ -6,6 +6,9 @@ from utils.pdf_reader import extract_text_from_pdf
 from utils.summarizer import generate_summary
 from utils.validation import validate_pdf_content
 from utils.questions import generate_questions
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 # هذا السطر يضبط إعدادات Flask لعدم تحويل الأحرف غير ASCII إلى Unicode escape sequences في JSON responses، مما يسمح بعرض النصوص باللغة العربية بشكل صحيح في الواجهة الأمامية.
@@ -105,4 +108,4 @@ def get_questions_route():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True)
