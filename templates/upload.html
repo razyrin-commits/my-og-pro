@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>رفع الملف - لخص وتعلم</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/upload.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <strong>لخص وتعلم</strong>
+            </div>
+            <ul>
+                <li><a href="/">الرئيسية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <a href="/" class="back-link">← العودة للرئيسية</a>
+            <h1>رفع ملف PDF</h1>
+            <p>اختر ملف الـ PDF الذي تود تلخيصه وتحويله إلى أسئلة</p>
+            
+            <section class="languages" style="margin-bottom: 20px;">
+                <p>اختر لغة الملخص:</p>
+                <input type="radio" id="lang-ar" name="lang" value="ar" checked>
+                <label for="lang-ar">العربية</label>
+                <input type="radio" id="lang-en" name="lang" value="en">
+                <label for="lang-en">الإنجليزية</label>
+            </section>
+
+            <div class="upload-area" id="drop-zone">
+                <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required>
+                <label for="pdfFile">
+                    <span id="status">اضغط هنا أو اسحب الملف لرفعه</span>
+                </label>
+            </div>
+
+            <button type="button" id="submit-btn" class="submit-btn">بدء عملية التلخيص</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>جميع الحقوق محفوظة &copy; 2026 - فريق العمل</p>
+            <p>تم التطوير بكل فخر لخدمة الطلاب والباحثين</p>
+        </div>
+    </footer>
+    <script src="/static/script/upload.js"></script>
+</body>
+
+</html>

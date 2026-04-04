@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>ملخص المحتوى - لخص وتعلم</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/summary.css">
+</head>
+
+<body>
+
+    <header class="main-nav-header">
+        <nav>
+            <div class="logo"><strong>لخص وتعلم</strong></div>
+            <ul>
+                <li><a href="/">الرئيسية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="content-header-box">
+                <a href="/upload-page" class="back-link">← رفع ملف جديد</a>
+                <h1>ملخص الملف</h1>
+            </section>
+
+            <section class="summary-section">
+                <h2>📌 النقاط الرئيسية</h2>
+                <ul id="keyPoints">
+                    </ul>
+            </section>
+
+            <section class="summary-section">
+                <h2>📖 الملخص التفصيلي</h2>
+                <div id="fullSummary" class="content-box">
+                    </div>
+            </section>
+
+            <div class="action-box">
+                <p>هل استوعبت الملخص جيداً؟ اختر إعدادات الاختبار واختبر نفسك!</p>
+                
+                <p>اختر عدد الأسئلة</p>
+                <input type="radio" id="q10" name="questions" value="10" checked>
+                <label for="q10">10</label>
+                <input type="radio" id="q20" name="questions" value="20">
+                <label for="q20">20</label>
+                <input type="radio" id="q30" name="questions" value="30">
+                <label for="q30">30</label>
+
+                <p>اختر نوع الأسئلة</p>
+                <input type="radio" id="typeMCQ" name="type" value="MCQ" checked>
+                <label for="typeMCQ">اختيارات (MCQ)</label>
+                <input type="radio" id="typeTF" name="type" value="t/f">
+                <label for="typeTF">صح/خطأ (T/F)</label>
+                <br><br>
+                <button id="startQuizBtn" class="quiz-btn" style="border:none; cursor:pointer;">الانتقال للاختبار التفاعلي ←</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>جميع الحقوق محفوظة &copy; 2026 - فريق العمل</p>
+            <p>تم التطوير بكل فخر لخدمة الطلاب والباحثين</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
+    <script src="/static/script/summary.js"></script>
+</body>
+</html>

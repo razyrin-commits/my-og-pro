@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>الاختبار التفاعلي - لخص وتعلم</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/questions.css">
+</head>
+
+<body>
+    <header class="main-nav-header">
+        <nav>
+            <div class="logo"><strong>لخص وتعلم</strong></div>
+            <ul>
+                <li><a href="/">الرئيسية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="quiz-container">
+            <div class="content-header-box">
+                <h1 id="quiz-title">جاري تحضير الاختبار...</h1>
+                <p id="progress-text">السؤال 0 من 0</p>
+            </div>
+
+            <div id="question-card" class="content-box" style="margin-top: 20px;">
+                <h3 id="question-text">سؤال الاختبار سيظهر هنا...</h3>
+                <div id="options-container" class="options-grid">
+                </div>
+            </div>
+
+            <button id="next-btn" class="quiz-btn" style="display: none;">السؤال التالي</button>
+        </section>
+
+        <section id="result-container" class="content-box" style="display: none; text-align: center;">
+            <h2 id="result-title">انتهى الاختبار!</h2>
+            <div id="score-display" style="font-size: 2rem; margin: 20px 0;">0/0</div>
+            <p id="result-feedback"></p>
+
+            <div class="action-buttons">
+                <a href="/summary-page" class="back-link" style="display: inline-block; margin: 10px;">العودة للملخص</a>
+                <a href="/upload-page" class="quiz-btn" style="display: inline-block; margin: 10px;">رفع ملف جديد</a>
+                <button id="new-questions-btn">أسئلة جديدة</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/script/questions.js"></script>
+</body>
+
+</html>

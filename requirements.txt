@@ -1,0 +1,7 @@
+flask
+flask-cors
+pypdf
+python-dotenv
+pathlib
+gunicorn
+google-genai
